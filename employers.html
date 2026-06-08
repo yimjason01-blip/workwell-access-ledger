@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WorkWell for Employers — Support more workers without a new plan.</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+.page-hero {
+  background: var(--navy);
+  padding: 100px 48px 80px;
+  border-bottom: 3px solid var(--mint);
+}
+.page-hero .inner { max-width: 1120px; margin: 0 auto; }
+.page-hero h1 { font-size: clamp(36px,4.5vw,60px); line-height: 1.1; color: white; max-width: 720px; margin-bottom: 24px; }
+.page-hero p { font-size: 18px; line-height: 1.7; color: rgba(255,255,255,0.6); max-width: 560px; margin-bottom: 40px; }
+
+.no-cost { background: var(--offwhite); padding: 80px 48px; }
+.no-cost .inner { max-width: 1120px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+.no-cost h2 { font-size: clamp(28px,3vw,40px); color: var(--navy-h); margin-bottom: 20px; line-height: 1.2; }
+.no-cost p { font-size: 16px; line-height: 1.7; color: var(--slate); margin-bottom: 20px; }
+.fact-list { list-style: none; display: flex; flex-direction: column; gap: 20px; }
+.fact-list li { display: flex; gap: 16px; align-items: flex-start; }
+.fact-dot { width: 3px; flex-shrink: 0; background: var(--mint); align-self: stretch; margin-top: 4px; }
+.fact-list li div h4 { font-size: 15px; color: var(--navy-h); margin-bottom: 4px; }
+.fact-list li div p { font-size: 14px; color: var(--slate); line-height: 1.5; margin: 0; }
+
+.launch-band { background: var(--pale); padding: 80px 48px; border-top: 1px solid var(--border); }
+.launch-band .inner { max-width: 1120px; margin: 0 auto; }
+.launch-band h2 { font-size: clamp(26px,2.5vw,36px); color: var(--navy-h); margin-bottom: 48px; line-height: 1.2; }
+.launch-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; background: var(--border); }
+.launch-step { background: white; padding: 32px 28px; }
+.step-n { font-family: 'Bricolage Grotesque', sans-serif; font-size: 32px; font-weight: 800; color: var(--mint); margin-bottom: 16px; line-height: 1; }
+.launch-step h4 { font-size: 16px; color: var(--navy-h); margin-bottom: 8px; }
+.launch-step p { font-size: 14px; color: var(--slate); line-height: 1.6; }
+
+.objections { background: white; padding: 80px 48px; border-top: 1px solid var(--border); }
+.objections .inner { max-width: 1120px; margin: 0 auto; }
+.objections h2 { font-size: clamp(24px,2.5vw,34px); color: var(--navy-h); margin-bottom: 48px; }
+.obj-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px; background: var(--border); }
+.obj-card { background: var(--offwhite); padding: 32px 28px; }
+.obj-q { font-size: 15px; font-weight: 600; color: var(--navy-h); margin-bottom: 12px; line-height: 1.4; }
+.obj-a { font-size: 14px; color: var(--slate); line-height: 1.65; }
+
+@media (max-width: 768px) {
+  .page-hero, .no-cost, .launch-band, .objections { padding: 56px 24px; }
+  .no-cost .inner { grid-template-columns: 1fr; gap: 40px; }
+  .launch-steps { grid-template-columns: 1fr 1fr; }
+  .obj-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="wordmark">Work<span>Well</span></a>
+  <ul>
+    <li><a href="employees.html">Employees</a></li>
+    <li><a href="employers.html">Employers</a></li>
+    <li><a href="partners.html">Partners</a></li>
+    <li><a href="#" class="nav-cta">Get started</a></li>
+  </ul>
+</nav>
+
+<section class="page-hero">
+  <div class="inner">
+    <span class="kicker">For employers</span>
+    <h1>Support more of your workforce without building another major medical plan.</h1>
+    <p>WorkWell gives your non-eligible, part-time, and cost-burdened workers a real path to everyday care — at no employer premium contribution, with low burden to launch.</p>
+    <a href="#" class="btn">Talk to us about launch</a>
+  </div>
+</section>
+
+<section class="no-cost">
+  <div class="inner">
+    <div>
+      <span class="kicker dark">The offer</span>
+      <h2>No employer premium. No new plan. Real retention value.</h2>
+      <p>WorkWell is a direct-pay marketplace. Your workers pay their own monthly fee. You approve distribution and communications. That's the model.</p>
+      <p>The workers who benefit most are the ones your current plan doesn't reach — part-time, variable-hour, seasonal, or those who opted out because the premium was unaffordable.</p>
+    </div>
+    <ul class="fact-list">
+      <li><div class="fact-dot"></div><div><h4>No employer premium contribution</h4><p>Employees pay directly. You are not adding a new benefit line to your budget.</p></div></li>
+      <li><div class="fact-dot"></div><div><h4>No new plan complexity</h4><p>WorkWell is not a health insurance plan. It is not an ACA-equivalent or MEC. No new compliance burden from the product itself.</p></div></li>
+      <li><div class="fact-dot"></div><div><h4>Low operational burden</h4><p>You approve the population and the communication. WorkWell handles enrollment, activation, support, and reporting.</p></div></li>
+      <li><div class="fact-dot"></div><div><h4>Retention signal, not just a perk</h4><p>Workers who have access to care show up. Workers who don't leave for roles that offer something real.</p></div></li>
+      <li><div class="fact-dot"></div><div><h4>Runs through your broker or partner</h4><p>WorkWell is distributed through Colonial Life, HUB International, Selerix, and other channel partners — no direct procurement required.</p></div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="launch-band">
+  <div class="inner">
+    <h2>How an employer launch works.</h2>
+    <div class="launch-steps">
+      <div class="launch-step"><div class="step-n">1</div><h4>Your broker presents the offer</h4><p>WorkWell is brought to you through your existing broker or Colonial Life relationship. No cold outreach required.</p></div>
+      <div class="launch-step"><div class="step-n">2</div><h4>You approve the population</h4><p>Identify which workforce segments can access WorkWell. Approve the communication path.</p></div>
+      <div class="launch-step"><div class="step-n">3</div><h4>Workers enroll directly</h4><p>Employees receive communications and enroll in the WorkWell marketplace. Direct pay. No payroll integration required in V1.</p></div>
+      <div class="launch-step"><div class="step-n">4</div><h4>You receive reporting</h4><p>Enrollment counts, activation rate, and utilization summary — without managing member-level service issues.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="objections">
+  <div class="inner">
+    <h2>Common questions from employers.</h2>
+    <div class="obj-grid">
+      <div class="obj-card"><p class="obj-q">Does offering WorkWell create any ERISA or ACA compliance exposure?</p><p class="obj-a">WorkWell is not a health insurance plan. Compliance review is required before launch, and WorkWell works through your Colonial Life or broker partner to ensure required reviews happen before distribution.</p></div>
+      <div class="obj-card"><p class="obj-q">We already offer a telehealth vendor. How is this different?</p><p class="obj-a">A telehealth vendor is one ingredient. WorkWell combines telemedicine, pharmacy discounts, local care, mental health, and optional financial protection in one direct-pay package — for the workers your current plan doesn't reach at all.</p></div>
+      <div class="obj-card"><p class="obj-q">What happens when a worker has a problem?</p><p class="obj-a">WorkWell owns the support path for health access issues. Colonial Life or the approved TPA owns supplemental policy questions. Support is routed by issue type — you are not the first call.</p></div>
+      <div class="obj-card"><p class="obj-q">Can we pilot with one location or one segment first?</p><p class="obj-a">Yes. A single location, division, or workforce segment is the recommended launch pattern — especially for employers launching for the first time.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div><strong>WorkWell</strong><p>Alternative Health Access for workers traditional benefits do not reach. Powered by LASO.</p></div>
+    <div><strong>Workers</strong><p><a href="employees.html">How it works</a><br><a href="employees.html">Everyday Care</a></p></div>
+    <div><strong>Employers</strong><p><a href="employers.html">The offer</a><br><a href="employers.html">No-cost model</a></p></div>
+    <div><strong>Partners</strong><p><a href="partners.html">Colonial Life</a><br><a href="partners.html">Brokers</a></p></div>
+  </div>
+  <p class="footer-base">© 2024 WorkWell, powered by LASO. This is an illustrative prototype.</p>
+</footer>
+</body>
+</html>

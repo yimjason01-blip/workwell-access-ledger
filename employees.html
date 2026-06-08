@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WorkWell for Workers — When something happens, there is a next step.</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+.page-hero {
+  background: var(--ink);
+  padding: 100px 48px 80px;
+}
+.page-hero .inner { max-width: 1120px; margin: 0 auto; }
+.page-hero h1 {
+  font-size: clamp(40px, 5vw, 64px);
+  line-height: 1.1;
+  color: white;
+  max-width: 700px;
+  margin-bottom: 24px;
+}
+.page-hero p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.6);
+  max-width: 560px;
+  margin-bottom: 40px;
+}
+
+.moments {
+  background: var(--offwhite);
+  padding: 80px 48px;
+  border-top: 3px solid var(--mint);
+}
+.moments .inner { max-width: 1120px; margin: 0 auto; }
+.moments h2 {
+  font-size: clamp(28px, 3vw, 40px);
+  color: var(--navy-h);
+  margin-bottom: 48px;
+  max-width: 640px;
+  line-height: 1.2;
+}
+.moments-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  background: var(--border);
+  margin-bottom: 64px;
+}
+.moment-card {
+  background: white;
+  padding: 36px 28px;
+}
+.moment-card .trigger {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 16px;
+  display: block;
+}
+.moment-card h4 {
+  font-size: 19px;
+  color: var(--navy-h);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+.moment-card p {
+  font-size: 14px;
+  color: var(--slate);
+  line-height: 1.6;
+}
+
+.packages {
+  background: var(--pale);
+  padding: 80px 48px;
+}
+.packages .inner { max-width: 1120px; margin: 0 auto; }
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+  background: var(--border);
+  margin-top: 40px;
+}
+.package {
+  background: white;
+  padding: 40px 36px;
+}
+.package.featured { background: var(--navy); }
+.package-tag {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 16px;
+  display: block;
+}
+.package.featured .package-tag { color: var(--mint); }
+.package h3 {
+  font-size: 28px;
+  color: var(--navy-h);
+  margin-bottom: 8px;
+}
+.package.featured h3 { color: white; }
+.package .price {
+  font-size: 14px;
+  color: var(--slate);
+  margin-bottom: 28px;
+}
+.package.featured .price { color: rgba(255,255,255,0.5); }
+.package ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+.package ul li {
+  font-size: 15px;
+  color: var(--slate);
+  padding-left: 20px;
+  position: relative;
+  line-height: 1.5;
+}
+.package ul li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--mint);
+  font-weight: 700;
+}
+.package.featured ul li { color: rgba(255,255,255,0.7); }
+.package.featured ul li::before { color: var(--mint); }
+
+@media (max-width: 768px) {
+  .page-hero { padding: 72px 24px 56px; }
+  .moments { padding: 56px 24px; }
+  .moments-grid, .packages-grid { grid-template-columns: 1fr; }
+  .packages { padding: 56px 24px; }
+}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="wordmark">Work<span>Well</span></a>
+  <ul>
+    <li><a href="employees.html">Employees</a></li>
+    <li><a href="employers.html">Employers</a></li>
+    <li><a href="partners.html">Partners</a></li>
+    <li><a href="#" class="nav-cta">Get started</a></li>
+  </ul>
+</nav>
+
+<section class="page-hero">
+  <div class="inner">
+    <span class="kicker">For workers</span>
+    <h1>When something happens, there is a next step.</h1>
+    <p>WorkWell gives you affordable everyday care — telemedicine, pharmacy, local care, and mental health — with optional financial protection. No employer plan required. Usable on day one.</p>
+    <a href="#" class="btn">Get WorkWell</a>
+  </div>
+</section>
+
+<section class="moments">
+  <div class="inner">
+    <h2>The care moment. The clear next step.</h2>
+    <div class="moments-grid">
+      <div class="moment-card">
+        <span class="trigger">When you're sick</span>
+        <h4>A doctor visit that doesn't start with a bill.</h4>
+        <p>Telemedicine by phone or video. Prescriptions sent to your pharmacy. No referral, no waiting room, no surprise cost.</p>
+      </div>
+      <div class="moment-card">
+        <span class="trigger">When a prescription costs too much</span>
+        <h4>Savings you can use at the pharmacy counter.</h4>
+        <p>WorkWell pharmacy discounts work on generics and branded medications at pharmacies nationwide.</p>
+      </div>
+      <div class="moment-card">
+        <span class="trigger">When you need local care</span>
+        <h4>Labs, imaging, and urgent care at lower cost.</h4>
+        <p>A network of local providers at discounted rates. Know your cost before you go.</p>
+      </div>
+      <div class="moment-card">
+        <span class="trigger">When you need to talk to someone</span>
+        <h4>Mental health support without the wait.</h4>
+        <p>Counseling, crisis support, and mental health navigation included in Everyday Care Plus.</p>
+      </div>
+      <div class="moment-card">
+        <span class="trigger">When an accident happens</span>
+        <h4>Financial protection for the unexpected.</h4>
+        <p>Accident, critical illness, and hospital indemnity coverage available as optional add-ons at checkout.</p>
+      </div>
+      <div class="moment-card">
+        <span class="trigger">When you have a question</span>
+        <h4>One place to start. Every time.</h4>
+        <p>WorkWell support routes your question to the right owner — whether it's a care question, pharmacy issue, or policy matter.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="packages">
+  <div class="inner">
+    <span class="kicker dark">Choose your package</span>
+    <h2 style="font-size:clamp(28px,3vw,40px);color:var(--navy-h);margin-bottom:0;line-height:1.2;">Two packages. One clear path to care.</h2>
+    <div class="packages-grid">
+      <div class="package">
+        <span class="package-tag">Everyday Care</span>
+        <h3>Everyday Care</h3>
+        <p class="price">The foundation — telemedicine, pharmacy, and local care.</p>
+        <ul>
+          <li>Unlimited telemedicine visits</li>
+          <li>Pharmacy discount network</li>
+          <li>Local medical service discounts</li>
+          <li>Family coverage available</li>
+        </ul>
+        <a href="#" class="btn btn-navy">Get Everyday Care</a>
+      </div>
+      <div class="package featured">
+        <span class="package-tag">Everyday Care Plus</span>
+        <h3>Everyday Care Plus</h3>
+        <p class="price">Everything in Everyday Care, plus mental health access.</p>
+        <ul>
+          <li>Unlimited telemedicine visits</li>
+          <li>Pharmacy discount network</li>
+          <li>Local medical service discounts</li>
+          <li>Mental health counseling and support</li>
+          <li>Family coverage available</li>
+        </ul>
+        <a href="#" class="btn">Get Everyday Care Plus</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <strong>WorkWell</strong>
+      <p>Alternative Health Access for workers traditional benefits do not reach.<br>Powered by LASO.</p>
+    </div>
+    <div>
+      <strong>Workers</strong>
+      <p><a href="employees.html">How it works</a><br><a href="employees.html">Everyday Care</a><br><a href="employees.html">Find care</a></p>
+    </div>
+    <div>
+      <strong>Employers</strong>
+      <p><a href="employers.html">The offer</a><br><a href="employers.html">No-cost model</a><br><a href="employers.html">Launch</a></p>
+    </div>
+    <div>
+      <strong>Partners</strong>
+      <p><a href="partners.html">Colonial Life</a><br><a href="partners.html">Brokers</a><br><a href="partners.html">Platforms</a></p>
+    </div>
+  </div>
+  <p class="footer-base">© 2024 WorkWell, powered by LASO. This is an illustrative prototype.</p>
+</footer>
+</body>
+</html>
